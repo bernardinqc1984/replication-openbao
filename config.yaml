@@ -1,0 +1,19 @@
+primary:
+  url: "https://primary-openbao:8201"
+  token: "root-token-primary"
+  
+secondary:
+  url: "https://secondary-openbao:8201" 
+  token: "root-token-secondary"
+  
+replication:
+  sync_interval: 300  # seconds
+  verify_ssl: false
+  timeout: 30
+  exclude_paths:
+    - "sys/"
+    - "identity/"
+  
+logging:
+  level: "INFO"
+  file: "replication.log"
