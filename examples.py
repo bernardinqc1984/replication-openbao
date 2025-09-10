@@ -45,23 +45,23 @@ def example_basic_usage():
     # Perform health check
     print("Checking health...")
     if not primary.health_check():
-        print("❌ Primary OpenBao is not healthy")
+        print("Primary OpenBao is not healthy")
         return
     
     if not secondary.health_check():
-        print("❌ Secondary OpenBao is not healthy")
+        print("Secondary OpenBao is not healthy")
         return
     
-    print("✅ Both instances are healthy")
+    print("Both instances are healthy")
     
     # Perform one-time sync
     print("Starting replication...")
     success = sync.full_sync()
     
     if success:
-        print("✅ Replication completed successfully")
+        print("Replication completed successfully")
     else:
-        print("❌ Replication failed")
+        print("Replication failed")
 
 def example_continuous_monitoring():
     """Example of continuous monitoring"""
