@@ -6,25 +6,25 @@ This Python program implements inter-site replication for OpenBao, replicating t
 
 ## Key Features
 
-### ✅ Complete Data Synchronization
+### Complete Data Synchronization
 - **Secret Engines**: All custom secret engines are replicated with their configurations
 - **Authentication Methods**: All auth methods (except token auth) are replicated
 - **Policies**: All custom policies are synchronized
 - **Secrets**: All secrets and KV data are replicated recursively
 - **Metadata**: Engine configurations, descriptions, and options are preserved
 
-### ✅ Active-Passive Replication
+### Active-Passive Replication
 - Primary cluster remains active and accepts writes
 - Secondary cluster is passive and receives data
 - Secondary root token is preserved during replication
 
-### ✅ API-Based Communication
+### API-Based Communication
 - Uses OpenBao REST API on port 8201
 - Supports both HTTP and HTTPS
 - Configurable SSL verification
 - Timeout and retry handling
 
-### ✅ Flexible Configuration
+### Flexible Configuration
 - YAML configuration files
 - Environment variable support
 - CLI parameter overrides
